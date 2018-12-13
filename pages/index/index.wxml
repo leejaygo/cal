@@ -1,0 +1,21 @@
+<!--index.wxml-->
+<view class="container">
+  	<view class="item-line">
+	    <label class="item-line_label">税前工资：</label>
+	    <input type="text" value="{{total}}" bindinput="totalInput" placeholder-class="placeholder" placeholder="请输入税前工资"/>元
+	</view>
+	<view class="box">	
+		<view class="item-line mgbt0">
+		      <label class="item-line_label">社保缴纳基数：</label>
+		      <input type="digit" value="{{social}}" bindinput="socialInput" placeholder-class="placeholder" placeholder="输入社保缴纳基数"/>元
+		</view>
+		<view class="tip">选填，如果不填默认按照当前税前工资计算</view>
+	</view>
+	<view class="item-line">
+	    <label class="item-line_label">公积金缴纳比例：</label>
+	    <input type="digit" value="{{gjj}}" bindinput="gjjInput" placeholder-class="placeholder" placeholder="输入缴纳百分比"/>%
+	</view>
+</view>
+<button type="primary" class="cal-btn" bindtap="beginCal">开始计算</button>
+<view class="cont-tip">备注：计算结果仅供参考使用</view>
+

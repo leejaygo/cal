@@ -1,0 +1,37 @@
+<view class="container">
+	<view class="item-line bigtfont">
+		<label class="item-line_label">税后工资合计:</label>
+		<view class="item-line_res"><span>{{afterTax}}</span>元</view>
+	</view>
+	<view class="cont-detail">详细扣费条目：</view>
+	<view class="">
+		<view class="item-line">
+			<label class="item-line_label">社保合计扣除:</label>
+			<view class="item-line_res"><span>{{totalSocialInsurance}}</span>元</view>
+		</view>
+		<view class="cont-title">其中：</view>
+		<view class="item-line">
+			<label class="item-line_label">养老保险扣除:</label>
+			<view class="item-line_res"><span>{{yanglao}}</span>元</view>
+		</view>
+		<view class="item-line">
+			<label class="item-line_label">医疗保险扣除:</label>
+			<view class="item-line_res"><span>{{yiliao}}</span>元</view>
+		</view>
+		<view class="item-line">
+			<label class="item-line_label">失业保险扣除:</label>
+			<view class="item-line_res"><span>{{shiye}}</span>元</view>
+		</view>
+		<view class="item-line bordbot mgt20">
+			<label class="item-line_label">公积金合计扣除:</label>
+			<view class="item-line_res"><span>{{totalGjj}}</span>元</view>
+		</view>
+		<view class="item-line bordbot">
+			<label class="item-line_label">个税合计扣除:</label>
+			<view class="item-line_res"><span>{{payTax}}</span>元</view>
+		</view>
+	</view>
+	
+	
+	<button type="primary" bindtap="backCal" class="cal-btn">重新计算</button>
+</view>

@@ -1,0 +1,67 @@
+/**index.wxss**/
+.container {
+	margin: 40rpx;
+  	padding: 40rpx;
+  	box-sizing: border-box;
+  	background: #fff;
+  	border-radius: 4px;
+}
+.item-line{
+	display: flex;
+	font-size: 32rpx;
+	margin-bottom: 40rpx;
+	height: 60rpx;
+	padding-bottom: 30rpx;
+	line-height: 60rpx;
+	border-bottom: 2rpx solid #e6e6e6;
+	position: relative;
+}
+.mgbt0{
+	margin-bottom: 0;
+	border-width: 0;
+	padding-bottom: 0;
+}
+.item-line:last-child{
+	margin-bottom: 0;
+	border-width: 0;
+	padding-bottom: 0rpx;
+}
+.item-line_label{
+	display: block;
+	width: 260rpx;
+	height: 60rpx;
+	line-height: 60rpx;
+	text-align: right;
+}
+.item-line input{
+	flex: 1;
+	margin-right: 10rpx;
+	height: 60rpx;
+	text-align: right;
+	font-size: 40rpx;
+}
+.cal-btn{
+	border-radius: 4px;
+	margin: 20px;
+	font-size: 34rpx;
+	line-height: 80rpx;
+}
+.placeholder{
+	font-size: 28rpx;
+	color: #999;
+}
+.cont-tip{
+	margin: 40rpx;
+	color: #999;
+	font-size: 24rpx;
+}
+.tip{
+	font-size: 20rpx;
+	color: #999;
+	padding-left: 36rpx;
+}
+.box{
+	margin-bottom: 40rpx;
+	padding-bottom: 10rpx;
+	border-bottom: 2rpx solid #e6e6e6;
+}

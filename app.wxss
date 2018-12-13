@@ -1,0 +1,26 @@
+/**app.wxss**/
+page{
+	background: #f4f4f4;
+	font-family: arial;
+	color: #333;
+    height: 100%;
+} 
+.clearfix{
+	content: '';
+	display: block;
+	clear: both;
+}
+.ellipsis-1 {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.ellipsis-2 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+    white-space: normal;
+    overflow: hidden;
+}
