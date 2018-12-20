@@ -24,6 +24,7 @@ Page({
           social: options.social||options.total
       }
     });
+    console.log(options.social)
     wx.setNavigationBarTitle({title: '计算结果'});
     this.calTotalSocialInsurance();
     this.calTotalGjj();

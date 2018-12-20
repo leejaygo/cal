@@ -8,7 +8,7 @@ Page({
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
     total: '',
-    gjj: '',
+    gjj: '7',
     social:''
   },
   //事件处理函数
@@ -61,6 +61,19 @@ Page({
     });
   },
   gjjInput (e){
+    console.log(e.detail.value)
+    var val = e.detail.value;
+    if(Math.ceil(e.detail.value)>60){
+      val = 60;
+    }
+    if(Math.floor(e.detail.value)<0){
+      val = 1;
+    } 
+    this.setData({
+      gjj: val
+    });
+  },
+  sliderchange (e){
     this.setData({
       gjj: e.detail.value
     });

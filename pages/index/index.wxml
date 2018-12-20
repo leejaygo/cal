@@ -11,9 +11,13 @@
 		</view>
 		<view class="tip">选填，如果不填默认按照当前税前工资计算</view>
 	</view>
-	<view class="item-line">
-	    <label class="item-line_label">公积金缴纳比例：</label>
-	    <input type="digit" value="{{gjj}}" bindinput="gjjInput" placeholder-class="placeholder" placeholder="输入缴纳百分比"/>%
+	<view class="">
+	    <view class="">公积金缴纳比例：</view>
+		<view class="item-line1">
+			<slider class="item-slider" min="1" step="1" max="60" bindchange="sliderchange" value="{{gjj}}" block-size="25" />
+			<input type="digit" class="iptclas" value="{{gjj}}" bindinput="gjjInput" placeholder-class="placeholder"/><span class="unit">%</span>
+		</view>
+	    
 	</view>
 </view>
 <button type="primary" class="cal-btn" bindtap="beginCal">开始计算</button>
